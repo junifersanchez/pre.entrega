@@ -5,93 +5,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--css bs-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!--css-->
     <link rel="stylesheet" href="../css/estilo.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
 <body>
 
     <!--header-->
-    <header class="encabezado">
-
-        <img class="logo" src="../img/Logo.png" alt="Logo">
-
-
-        <nav class="lista">
-
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="quienessomos.html">Quienes Somos</a></li>
-                <li><a href="contacto.html">contacto</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="sucursales.html">Sucursales</a></li>
-
-            </ul>
-        </nav>
+    <!-- HEADER CON BOOTSTRAP -->
+    <header class="navbar navbar-expand-lg encabezado">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="imgLogo" src="../img/Logo.png" alt="Logo a lo zuliano">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav fuentesNav ms-auto">
+                    <li class="nav-item fuentesNav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item fuentesNav">
+                        <a class="nav-link" href="../html/menu.html">Productos</a>
+                    </li>
+                    <li class="nav-item fuentesNav">
+                        <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item fuentesNav">
+                        <a class="nav-link" href="../html/quienessomos.html">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item fuentesNav">
+                        <a class="nav-link" href="../html/sucursales.html">Sucursales</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <button class="boton">haz tu pedido</button>
 
     </header>
-   
-    <div class="tituloNegocio">
-        <h1>Un poco de Nuestra Historia</h1>
-    </div>
 
-    <div class="contenedorPadre">
-
-        <div class="imgNegocio">
-            <img src="../img/negocio.jpg" alt="">
+    <main class="contenedorNegocio">
+        <div class="tituloNegocio">
+            <h1>Un poco de Nuestra Historia</h1>
         </div>
 
-        <div class="parrafoNegocio">
-            <p> Si has llegado hasta aqui es poeque agora mismo te estaras preguntando
+
+        <div class="clearfix">
+            <img src="../img/negocio.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="imgNegocio">
+
+            <p>Si has llegado hasta aqui es porque ahora mismo te estaras preguntando
                 y ques es ¿A LO ZULIANO?
-                A lo Zuliano nace hace a 3 años de manos de una pareja de migrantes venezolanos, 
+
+            </p>
+
+            <p>
+                A lo Zuliano nace hace a 3 años de manos de una pareja de migrantes venezolanos,
                 que abandonan su país en busca
                 de una calidad de vida para ellos y principalmente para su familia,
                 con una maleta llena de sueños, llegando
                 a un país con ganas de trabajar y de dar a conocer lo mejor de la
                 gastronomía venezolana.
+            </p>
 
+            <p>
                 Somos un emprendimiento 100% con sabor Venezolano destinado para el
-                compartir en familia,
-                donde podrán
-                disfrutar de un variado menú, para satisfacer y complacer todo tipo de
+                compartir en familia,donde podrán disfrutar de un variado menú, para satisfacer y complacer todo tipo de
                 paladar.
-                Nuestro plato principal son
-                las empanadas y es la mejor, no dicho por nosotros sino por nuestros
+                Nuestro plato principal soNlas empanadas y es la mejor, no dicho por nosotros sino por nuestros
                 comensales.
 
             </p>
-        </div>
+            <p> Nos dedicamos a cumplir y hacer realidad el sueño de muchos hogares Venezolanos que nos encontramos
+                fuera de nuestra madre patria: Deleitar con platos tradicionales Venezolanos, tanto presencial como a
+                domicilio.
 
-    </div>
+                También ofrecemos nuestro servicio de Catering Venezolano, para
+                cualquier tipo de evento, como también la venta detallada de alguna exquisitez que quieras saborear,
+                bajo nuestro lema: “Como en Casa”.</p>
+
+
+
+
+
+
+            img src="../" class="col-md-6 -md-end mb-3 ms-md-3" alt="imgNegocio">
+
+    </main>
+
+    <!--aside-->
+    <aside class="rowAside">
+        <H2>LA MEJOR ATENCIÓN </H2>
+        <H3>nuestro personal lo caracteriza el </H3>
+
+        <UL class="listaNegocio">
+            <LI><i class="bi bi-check-lg"></i>Respeto</LI>
+            <LI><i class="bi bi-check-lg"></i>Amabilidad</LI>
+            <LI><i class="bi bi-check-lg"></i>Eficiencia</LI>
+        </UL>
+    </aside>
 
 
     <!--footer-->
 
     <footer class="footer">
-        <div class="container">
-            <div class="footerContenido">
-                <div class="footer-link">
-                    <h2>Contacto</h2>
-                    <p><i class="fas fa-map-marker-alt"></i> Direccion: Guanaco Norte 1519 </p>
-                    <p><i class="fas fa-phone"></i>telefono: 5986795685</p>
-                    <p><i class="fa-clock-there"></i>Horarios:Martes a Domingo 08:00- 23:oo hrs </p>
-                    <p><i class="derechos"></i> copyright 2022 todos los derechos reservados </p>
+        <div class="containerfooter">
+            <div class="footerRow">
 
+                <div class="footer-link">
+                    <div class="logoFooter">
+                        <img width="130" height="90" src="../img/Logo.png" alt="logofooter">
+                    </div>
+                    <p>A LO ZULIANO. Las más grandes, rellenas y con la mejor sazón venezolano.
+                        Somos el punto de encuentro para los venezolanos en Chile, con sabores auténticos y
+                        buenos
+                        recuerdos ¡Venezuela en cada bocado!</p>
                 </div>
 
                 <div class="footer-link">
-                    <h2> Redes Sociales</h2>
+
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Direccion: Guanaco Norte 1519 </p>
+                    <p><i class="fas fa-phone"></i>telefono: 5986795685</p>
+                    <p><i clEmpanadas ass="fa-clock-there"></i>Horarios:Martes a Domingo 08:00- 23:oo hrs </p>
+                </div>
+
+                <div class="footer-link">
+                    <h4> Siguenos</h4>
                     <div class="redesSociales">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="bi bi-whatsapp icon"></i></a>
+                        <a href=""><i class="bi bi-tiktok icon"></i></a>
                     </div>
+
                 </div>
             </div>
+            <p class="derechos"> copyright 2021 todos los derechos reservados. </p>
+
     </footer>
+    <!--bs-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
